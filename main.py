@@ -16,7 +16,8 @@ def main():
             amount_of_words = len(text.split())
             print(f'Report of the amount of words and letters')
             print(f'Total amount of words: {amount_of_words}')
-            for i in counted_letters:
+            for i in sorted(counted_letters):
+                  
                   print(f'Number of letter {i} is {counted_letters[i]}')
       text = get_text(book)
       counted_letters = get_letter_count(text)  
